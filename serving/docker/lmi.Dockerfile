@@ -22,7 +22,7 @@ ARG pydantic_version=2.8.2
 ARG djl_converter_wheel="https://publish.djl.ai/djl_converter/djl_converter-0.30.0-py3-none-any.whl"
 # HF Deps
 ARG protobuf_version=3.20.3
-ARG transformers_version=4.43.2
+ARG transformers_version=4.44.2
 ARG accelerate_version=0.32.1
 ARG bitsandbytes_version=0.43.1
 ARG optimum_version=1.21.2
@@ -31,9 +31,9 @@ ARG datasets_version=2.20.0
 ARG autoawq_version=0.2.5
 ARG tokenizers_version=0.19.1
 # LMI-Dist Deps
-ARG vllm_wheel="https://github.com/vllm-project/vllm/releases/download/v0.5.4/vllm-0.5.4-cp310-cp310-manylinux1_x86_64.whl"
-ARG flash_attn_2_wheel="https://github.com/vllm-project/flash-attention/releases/download/v2.6.1/vllm_flash_attn-2.6.1-cp310-cp310-manylinux1_x86_64.whl"
-ARG flash_infer_wheel="https://github.com/flashinfer-ai/flashinfer/releases/download/v0.1.2/flashinfer-0.1.2+cu121torch2.4-cp310-cp310-linux_x86_64.whl"
+ARG vllm_wheel="https://github.com/vllm-project/vllm/releases/download/v0.6.1/vllm-0.6.1+cu118-cp310-cp310-manylinux1_x86_64.whl"
+ARG flash_attn_2_wheel="https://github.com/vllm-project/flash-attention/releases/download/v2.6.2/vllm_flash_attn-2.6.2+cu118-cp310-cp310-manylinux1_x86_64.whl"
+ARG flash_infer_wheel="https://github.com/flashinfer-ai/flashinfer/releases/download/v0.1.6/flashinfer-0.1.6+cu118torch2.2-cp310-cp310-linux_x86_64.whl"
 # %2B is the url escape for the '+' character
 ARG lmi_dist_wheel="https://publish.djl.ai/lmi_dist/lmi_dist-11.0.0%2Bnightly-py3-none-any.whl"
 ARG seq_scheduler_wheel="https://publish.djl.ai/seq_scheduler/seq_scheduler-0.1.0-py3-none-any.whl"
