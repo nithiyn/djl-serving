@@ -17,10 +17,12 @@ services:
       context: .
       dockerfile: aarch64.Dockerfile
     image: "deepjavalibrary/djl-serving:${RELEASE_VERSION}aarch64${NIGHTLY}"
-  lmi:
+  lmi: 
     build:
       context: .
       dockerfile: lmi.Dockerfile
+      args:
+        DJL_VERSION: ${DJL_VERSION}  # Add this line to pass the build argument
     image: "deepjavalibrary/djl-serving:${RELEASE_VERSION}lmi${NIGHTLY}"
   pytorch-gpu:
     build:
